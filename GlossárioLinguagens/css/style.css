@@ -1,0 +1,176 @@
+/* ===== CONFIGURAÇÃO GERAL ===== */
+body {
+    background-color: rgb(215, 247, 247);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+
+/* ===== REMOVE LINHA DOS LINKS ===== */
+a {
+    text-decoration: none;
+}
+
+
+/* ===== TÍTULO ===== */
+.container-t {
+    display: flex;
+    justify-content: center;
+}
+
+.container-titulo {
+    background-color: rgb(174, 215, 252);
+    text-align: center;
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container-titulo h1 {
+    margin: 0 0 10px 0;
+    font-size: 4em;
+}
+
+.container-titulo h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+
+/* ===== CONTAINER DOS CARDS ===== */
+.escolha {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 40px;
+    gap: 25px;
+    padding: 0 20px 40px 20px;
+    flex-wrap: wrap;
+}
+
+
+/* ===== CARDS ===== */
+.html, .css, .js {
+    border-radius: 20px;
+
+    /* COR VISÍVEL (lilás + azul) */
+    background: linear-gradient(135deg, #e6dcf5, #cfe3ff);
+
+    width: 300px;
+    min-height: 430px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+
+/* ===== HOVER ===== */
+.html:hover, .css:hover, .js:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ===== TÍTULOS ===== */
+.t-e {
+    color: rgb(78, 78, 129);
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/* ===== TEXTO ===== */
+p {
+    text-align: justify;
+    line-height: 1.7;
+    color: rgb(60, 60, 60);
+}
+
+
+/* ===== BOTÃO ===== */
+button {
+    display: block;
+
+    width: 150px;
+
+    /* CENTRALIZA */
+    margin: auto auto 0 auto;
+
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #6a6ab0, #8a8ad8);
+
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+
+    text-align: center;
+
+    /* EVITA QUEBRAR "Ver esse" */
+    white-space: nowrap;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #7a7ad0, #a0a0ff);
+}
+
+
+/* ===== RESPONSIVO ===== */
+@media screen and (max-width: 900px) {
+    .escolha {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .html, .css, .js {
+        width: 90%;
+        min-height: auto;
+    }
+}
+
+
+/* ===== FUNDO ===== */
+.fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+    filter: blur(6px) brightness(0.65);
+    transition: filter 0.5s ease;
+}
+
+.fundo:hover {
+    filter: blur(4px) brightness(0.85);
+}
+
+.rodape {
+    width: 100%;              /* ocupa toda largura */
+    text-align: center;       /* centraliza o texto */
+    color: #ffffff;
+    padding: 15px 0;          /* cima/baixo */
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
