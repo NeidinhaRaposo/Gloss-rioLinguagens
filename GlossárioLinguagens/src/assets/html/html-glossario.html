@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define o padrão de caracteres para acentos funcionarem corretamente -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar melhor a celulares e telas menores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Liga este HTML ao arquivo CSS externo -->
+    <link rel="stylesheet" href="/GlossárioLinguagens/src/assets/css/html-glossario.css">
+
+    <title>HTML</title>
+</head>
+<body>
+
+    <div class="fundo">
+        <video autoplay loop muted class="video-background">
+            <source src="../videos/5224-183786646.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header class="principal-header">
+        <div class="header-container">
+            <h1 class="htmltitu">HTML (HyperText Markup Language)</h1>
+
+            <div class="titu">
+                <a class="titulos" href="js-glossario.html"><h1>JS</h1></a>
+                <h1>|</h1>
+                <a class="titulos" href="css-glossario.html"><h1>CSS</h1></a>
+                <h1>|</h1>
+                <a class="titulos" href="../index.html"><h1>Glossário</h1></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="espacinho"></div>
+
+    <div class="containergeral">
+
+        <!-- =========================================== começo ========================================================= -->
+        <div class="sanfonah1-container">
+            <div class="sanfonah1-item">
+                <button class="sanfonah1-header">Família &lt;h1&gt; até &lt;h6&gt;</button>
+
+                <div class="sanfonah1-content">
+                    <div class="sanfonah1-container">
+                        <div class="sanfonah1-item">
+                            <button class="sanfonah1-header">Visão geral</button>
+                            <div class="sanfonah1-content">
+                                <p>Essa família de tags são designadas á escrita. Elas tem tamanhos diferentes e caracteristicas de margem e sublinhamento algumas. São organizadas sendo &lt;h1&gt; a maior, &lt;h6&gt; menor, em escala com as outras.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfonah1-item">
+                            <button class="sanfonah1-header">Analizando &lt;h1&gt; e &lt;h2&gt;</button>
+                            <div class="sanfonah1-content">
+                                <p>A tag &lt;h1&gt; é geralmente usada para o título principal da página. Ela representa o conteúdo mais importante e costuma aparecer apenas uma vez no topo do site. Por exemplo, em um artigo, o &lt;h1&gt; pode ser o título do tema principal.</p>
+                                <p>A tag &lt;h2&gt; é usada para dividir o conteúdo em seções importantes. Ela representa um nível abaixo do &lt;h1&gt; e é ideal para marcar sessões como "Introdução", "Exemplos" ou "Benefícios", dentro do conteúdo principal.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfonah1-item">
+                            <button class="sanfonah1-header">Analizando &lt;h3&gt; e &lt;h4&gt;</button>
+                            <div class="sanfonah1-content">
+                                <p>A tag &lt;h3&gt; representa um subtítulo dentro de uma seção marcada com &lt;h2&gt;. Por exemplo, se &lt;h2&gt; for “Exemplos de uso”, o &lt;h3&gt; pode ser algo como “Exemplo com parágrafos” ou “Exemplo com imagens”.</p>
+                                <p>A tag &lt;h4&gt; é usada como um subtítulo dentro de uma seção marcada com &lt;h3&gt;. Ela ajuda a organizar conteúdos que têm muitos detalhes ou subdivisões, mantendo a hierarquia clara sem confundir o leitor.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfonah1-item">
+                            <button class="sanfonah1-header">Analizando &lt;h5&gt; e &lt;h6&gt;</button>
+                            <div class="sanfonah1-content">
+                                <p>A tag &lt;h5&gt; representa um nível ainda mais específico de conteúdo. É útil quando você precisa dividir uma seção &lt;h4&gt; em partes menores, como em tutoriais longos, documentações técnicas ou manuais.</p>
+                                <p>A tag &lt;h6&gt; é o título de menor peso e importância dentro da hierarquia de títulos HTML. Ela raramente é usada, mas pode ser aplicada em situações bem específicas, como referências internas, notas secundárias ou estruturação profunda de conteúdo.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfonah1-item">
+                            <button class="sanfonah1-header">Imagem exemplo (site)</button>
+                            <div class="sanfonah1-content">
+                                <img src="../imagens/exemplo_da_familiah.jpg" alt="exemplo de todos da família">
+                            </div>
+                        </div>
+
+                        <div class="sanfonah1-item">
+                            <button class="sanfonah1-header">Imagem exemplo (tags)</button>
+                            <div class="sanfonah1-content">
+                                <img class="ex-tagh" src="../imagens/exemplo_da_familiah(tags).jpg" alt="exemplo de todos da família">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================================== fim ========================================================= -->
+
+        <div class="sanfona_a-container">
+            <div class="sanfona_a-item">
+                <button class="sanfona_a-header">tag &lt;a&gt;</button>
+
+                <div class="sanfona_a-content">
+                    <div class="sanfona_a-item">
+                        <button class="sanfona_a-header">O que ela faz?</button>
+                        <div class="sanfona_a-content">
+                            <p>define um hiperlink, permitindo que você crie links para outras páginas web, arquivos, locais dentro da mesma página, ou até mesmo para endereços de e-mail. Ela é uma das tags mais fundamentais em HTML e é amplamente utilizada para a navegação entre diferentes conteúdos.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_a-item">
+                        <button class="sanfona_a-header">Como usar</button>
+                        <div class="sanfona_a-content">
+                            <div class="sanfona_a-item">
+                                <button class="sanfona_a-header">Entendendo o herf</button>
+                                <div class="sanfona_a-content">
+                                    <ul>
+                                        <strong>O atributo href é essencial para definir o destino do link <br>Ele pode conter:</strong> <br>
+                                        <li>URLs: Endereços de outras páginas web (ex: href="https://www.example.com").</li><br>
+                                        <li>Âncoras: Links para seções específicas dentro da mesma página (ex: href="#secao1").</li><br>
+                                        <li>Arquivos: Links para download de arquivos (ex: href="documento.pdf").</li><br>
+                                        <li>Endereços de e-mail: Links que abrem o cliente de e-mail padrão (ex: href="mailto:email@example.com").</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="sanfona_a-item">
+                                <button class="sanfona_a-header">O que escrever dentro da tag?</button>
+                                <div class="sanfona_a-content">
+                                    <p>O conteúdo que você escreve define o texto visível do link, que o usuário clica para navegar para outro local. Pode ser um botão também usando outras tags juntos.</p>
+                                </div>
+                            </div>
+
+                            <div class="sanfona_a-item">
+                                <button class="sanfona_a-header">Imagem do codigo em andamento</button>
+                                <div class="sanfona_a-content">
+                                    <img src="../imagens/cod-a-andamen.png" alt="imagem do codigo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_a-item">
+                        <button class="sanfona_a-header">Imagem de como fica no site</button>
+                        <div class="sanfona_a-content">
+                            <img src="../imagens/ex-a-site.png" alt="imagem do site com o codigo funcionando">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--================================================================ Termino da primeira fileira de exemplo ===========================================================================-->
+
+    <div class="containergeral">
+        <div class="sanfona_botao-container">
+            <div class="sanfona_botao-item">
+                <button class="sanfona_botao-header">Usando botões</button>
+
+                <div class="sanfona_botao-content">
+                    <div class="sanfona_botao-container">
+                        <div class="sanfona_botao-item">
+                            <button class="sanfona_botao-header">Visão geral</button>
+                            <div class="sanfona_botao-content">
+                                <p>Os botões sem duvidas é uma das coisas mais comuns em sites, curiosidade que todas as abas com informações que você abre aqui são feitas com a tag &lt;button&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_botao-item">
+                            <button class="sanfona_botao-header">como usar</button>
+                            <div class="sanfona_botao-content">
+                                <div class="sanfona_botao-item">
+                                    <button class="sanfona_botao-header">tipos de botão</button>
+                                    <div class="sanfona_botao-content">
+                                        <ul>
+                                            <li>&lt;button type="button"&gt; <br>Função: Um botão genérico que não envia formulários. Usado para: Ações com JavaScript (como abrir um modal, alternar um menu, etc).</li><br>
+                                            <li>&lt;button type="submit"&gt; <br>Função: Envia o formulário onde o botão está inserido. Comportamento padrão se type for omitido.</li><br>
+                                            <li>&lt;button type="reset"&gt; <br>Função: Reseta os campos do formulário para seus valores iniciais.</li><br>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sanfona_botao-item">
+                                    <button class="sanfona_botao-header">programando o botão</button>
+                                    <div class="sanfona_botao-content">
+                                        <p>Se apenas encrevermos a tag &lt;button&gt;&lt;/button&gt;, será apenas uma caixa, por isso, devemos escrever algo dentro para ser o texto que vai dentro.</p>
+                                        <p>Também devemos dizer oque ele deve fazer, isso pode ser em JavaScript ou no próprio html, pra isso, usamos a tag &lt;a&gt; por fora, dizendo que o botão é uma ancora.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_botao-item">
+                            <button class="sanfona_botao-header">imagem do site</button>
+                            <div class="sanfona_botao-content">
+                                <img src="../imagens/exemplo-botaosite.jpg" alt="exemplo de botão">
+                            </div>
+                        </div>
+
+                        <div class="sanfona_botao-item">
+                            <button class="sanfona_botao-header">Imagem do código</button>
+                            <div class="sanfona_botao-content">
+                                <img class="ex-tagh" src="../imagens/exemplo-botao-tag.jpg" alt="exemplo de codigo de botao">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sanfona_img-container">
+            <div class="sanfona_img-item">
+                <button class="sanfona_img-header">tag &lt;img&gt; (imagem no site)</button>
+
+                <div class="sanfona_img-content">
+                    <div class="sanfona_img-item">
+                        <button class="sanfona_img-header">Uso geral</button>
+                        <div class="sanfona_img-content">
+                            <p>A tag &lt;img&gt; no HTML é usada para exibir imagens em uma página da web. Ela é uma tag autossuficiente, ou seja, não precisa de uma tag de fechamento.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_img-item">
+                        <button class="sanfona_img-header">detalhando a tag</button>
+                        <div class="sanfona_img-content">
+                            <p>Essa tag é muito facil. No momento que escreve-la, tem que estar acompanhada do "src=", ela é o comando que damos para dizer qual imagem queremos que apareça.</p>
+                            <p>Pode ser por link url, ou pelo html, nesse caso, tem que baixar a imagem e deixar na pasta junto onde está o código, para que consiga ser identificado.</p>
+                            <p>Junto, o comando "alt=", nele escrevemos um texto alternativo caso a imagem dê erro ou não seja carregada.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_img-item">
+                        <button class="sanfona_img-header">imagem de como fica no site</button>
+                        <div class="sanfona_img-content">
+                            <img class="ex_img_gar" src="../imagens/ex-imagem-site.jpg" alt="imagem do site com o codigo funcionando">
+                        </div>
+                    </div>
+
+                    <div class="sanfona_img-item">
+                        <button class="sanfona_img-header">imagem de como fica no código</button>
+                        <div class="sanfona_img-content">
+                            <img src="../imagens/ex-imagem-tag.jpg" alt="imagem do site com o codigo funcionando">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--================================================================ Termino da segunda fileira de exemplo ===========================================================================-->
+
+    <div class="containergeral">
+        <div class="sanfona_oul-container">
+            <div class="sanfona_oul-item">
+                <button class="sanfona_oul-header">listas com &lt;ol&gt; e &lt;ul&gt;</button>
+
+                <div class="sanfona_oul-content">
+                    <div class="sanfona_oul-container">
+                        <div class="sanfona_oul-item">
+                            <button class="sanfona_oul-header">Visão geral</button>
+                            <div class="sanfona_oul-content">
+                                <p>As tags &lt;ol&gt; e &lt;ul&gt; em HTML são usadas para criar listas, mas cada uma tem um propósito diferente.</p>
+                                <p>&lt;ol&gt;: cria listas ordenadas.</p>
+                                <p>&lt;ul&gt;: cria listas não ordenadas.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_oul-item">
+                            <button class="sanfona_oul-header">como usar</button>
+                            <div class="sanfona_oul-content">
+                                <p>Assim que colocar a tag, deverá dentro dela inserir outra chamada &lt;li&gt;. Você deve colocar 1 elemento da lista em cada &lt;li&gt;, caso contrário ficará tudo junto.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_oul-item">
+                            <button class="sanfona_oul-header">imagem do site</button>
+                            <div class="sanfona_oul-content">
+                                <img src="../imagens/ex-oul-site.png" alt="exemplo de listas">
+                            </div>
+                        </div>
+
+                        <div class="sanfona_oul-item">
+                            <button class="sanfona_oul-header">Imagem do código</button>
+                            <div class="sanfona_oul-content">
+                                <img class="ex-tagh" src="../imagens/ex-oul-cod.png" alt="exemplo de codigo de listas">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sanfona_main-container">
+            <div class="sanfona_main-item">
+                <button class="sanfona_main-header">tag &lt;main&gt; (topo do site)</button>
+
+                <div class="sanfona_main-content">
+                    <div class="sanfona_main-item">
+                        <button class="sanfona_main-header">Utilidade</button>
+                        <div class="sanfona_main-content">
+                            <p>A tag &lt;main&gt; é uma das mais usadas em HTML. Ela serve para agrupar elementos principais da página, foca em mostrar oque é preciso para o usuario direto na tela inicial, só deve haver uma.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_main-item">
+                        <button class="sanfona_main-header">como se usa</button>
+                        <div class="sanfona_main-content">
+                            <p>A main é um espaço em que tu coloca tudo que quer dentro como um armário.</p>
+                            <p>Primero abrimos ela &lt;main&gt; escrevemos outros comando aqui dentro &lt;/main&gt;</p>
+                            <p>Feito! O próxima etapa é mudar cor de fundo, posição de texto, imagens, cores... Isso você verá na area de css.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_main-item">
+                        <button class="sanfona_main-header">imagem de como fica no site</button>
+                        <div class="sanfona_main-content">
+                            <img class="ex_img_gar" src="../imagens/ex-main-site.png" alt="imagem do site com main">
+                        </div>
+                    </div>
+
+                    <div class="sanfona_main-item">
+                        <button class="sanfona_main-header">imagem de como fica no código</button>
+                        <div class="sanfona_main-content">
+                            <img src="../imagens/ex-main-cod.png" alt="imagem do codigo funcionando">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--================================================================ Termino da terceira fileira de exemplo ===========================================================================-->
+
+    <div class="containergeral">
+        <div class="sanfona_botao-container">
+            <div class="sanfona_botao-item">
+                <button class="sanfona_botao-header">utilizando &lt;footer&gt; (rodapé)</button>
+
+                <div class="sanfona_botao-content">
+                    <div class="sanfona_footer-container">
+                        <div class="sanfona_footer-item">
+                            <button class="sanfona_footer-header">Visão geral</button>
+                            <div class="sanfona_footer-content">
+                                <p>Rodapés são coisas que em sites mais elaborados são preciso, geralemnte usado pra dados de contato ou informações gerais.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_footer-item">
+                            <button class="sanfona_footer-header">como usar</button>
+                            <div class="sanfona_footer-content">
+                                <p>Assim como a tag &lt;main&gt;, deve ter só uma, servindo pra colocar elementos, porém é feita para ficar no final da página.</p>
+                                <p>Abrimos ela &lt;footer&gt; escreva os elementos que quer que esteja no rodapé aqui &lt;/footer&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_footer-item">
+                            <button class="sanfona_footer-header">imagem do site</button>
+                            <div class="sanfona_footer-content">
+                                <img class="img_roda_site" src="../imagens/ex-roda-site1.png" alt="exemplo de listas">
+                            </div>
+                        </div>
+
+                        <div class="sanfona_footer-item">
+                            <button class="sanfona_footer-header">Imagem do código</button>
+                            <div class="sanfona_footer-content">
+                                <img class="ex-tagh" src="../imagens/ex-roda-cod.png" alt="exemplo de codigo de listas">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sanfona_input-container">
+            <div class="sanfona_input-item">
+                <button class="sanfona_input-header">tag &lt;input&gt;</button>
+
+                <div class="sanfona_input-content">
+                    <div class="sanfona_input-item">
+                        <button class="sanfona_input-header">Utilidade</button>
+                        <div class="sanfona_input-content">
+                            <p>A tag &lt;input&gt; é uma das mais importantes no HTML, usada para criar campos interativos em formulários, permitindo que o usuário insira dados como texto, senhas, datas, selecione arquivos, marque opções, entre outros.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_input-item">
+                        <button class="sanfona_input-header">usando o básico</button>
+                        <div class="sanfona_input-content">
+                            <p>Essa tag é igual a &lt;img&gt;, ela auto completa, tanto é que só de escrever ela já dá pra ver funcionando.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_input-item">
+                        <button class="sanfona_input-header">Exemplo vivo (caixa de texto abaixo)</button>
+                        <div class="sanfona_input-content">
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="sanfona_input-item">
+                        <button class="sanfona_input-header">imagem de como fica no código</button>
+                        <div class="sanfona_input-content">
+                            <img src="../imagens/ex-input.png" alt="imagem do codigo funcionando">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--================================================================ Termino da quarta fileira de exemplo ===========================================================================-->
+
+    <div class="containergeral">
+        <div class="sanfona_audio-container">
+            <div class="sanfona_audio-item">
+                <button class="sanfona_audio-header">&lt;audio&gt;</button>
+
+                <div class="sanfona_audio-content">
+                    <div class="sanfona_audio-container">
+                        <div class="sanfona_audio-item">
+                            <button class="sanfona_audio-header">como usar</button>
+                            <div class="sanfona_audio-content">
+                                <p>Para inserir e reproduzir áudio diretamente em uma página da web, sem necessidade de plugins externos, é necessário estar em pastas junto com os códigos.</p>
+                                <p>Comece escrevendo a tag &lt;audio&gt; (aqui dentro escreva oque é para aparecer se não carregar) &lt;/audio&gt;</p>
+                                <p>Em seguida, devemos adicionar o audio com src=(arquivo.mp3). Também adicionar o tipo, no caso aqui type="audio/mpeg"</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_audio-item">
+                            <button class="sanfona_audio-header">Ver exemplo vivo</button>
+                            <div class="sanfona_audio-content">
+                                <audio controls>
+                                    <source src="../audios/Fly Me To The Moon - Frank Sinatra Violin.mp3" type="audio/mpeg">
+                                    Seu navegador não suporta a tag de áudio.
+                                </audio>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_audio-item">
+                            <button class="sanfona_audio-header">Imagem do código</button>
+                            <div class="sanfona_audio-content">
+                                <img class="ex-tagh" src="../imagens/ex-audio-cod.png" alt="exemplo de codigo de listas">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sanfona_video-container">
+            <div class="sanfona_video-item">
+                <button class="sanfona_video-header">tag &lt;video&gt;</button>
+
+                <div class="sanfona_video-content">
+                    <div class="sanfona_video-item">
+                        <button class="sanfona_video-header">Utilidade</button>
+                        <div class="sanfona_video-content">
+                            <p>A tag &lt;video&gt; é usada para incorporar um vídeo dentro da sua página. Em outras palavras, pode ser com ela criando uma "janela" com url ou com o seu vídeo baixado.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_video-item">
+                        <button class="sanfona_video-header">usando o básico</button>
+                        <div class="sanfona_video-content">
+                            <p>Essa tag é igual a &lt;img&gt;, porém para vídeos. Para usarmos temos que ter o vídeo baixado em uma pasta junto com os códigos.</p>
+                            <p>Com o "src=" localizamos o arquivo, feito, já pode colocar um vídeo.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_video-item">
+                        <button class="sanfona_video-header">Exemplo vivo (vídeo com audio)</button>
+                        <div class="sanfona_video-content">
+                            <video src="../videos/Scorpions - Wind Of Change (Official Music Video).mp4" controls width="640">
+                                Seu navegador não suporta o elemento de vídeo.
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_video-item">
+                        <button class="sanfona_video-header">imagem de como fica no código</button>
+                        <div class="sanfona_video-content">
+                            <img src="../imagens/ex-video-cod.jpg" alt="imagem do codigo funcionando">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Liga o JavaScript externo -->
+    <script src="../js/html-script.js"></script>
+<footer class="rodape">
+        <p>© 2026 Neidiman Raposo. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

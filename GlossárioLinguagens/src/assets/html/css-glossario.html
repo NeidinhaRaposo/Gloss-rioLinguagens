@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define a codificação de caracteres para exibir acentos corretamente -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar melhor em telas menores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Liga o HTML ao arquivo CSS externo -->
+    <link rel="stylesheet" href="/GlossárioLinguagens/src/assets/css/css-glossario.css">
+
+    <title>CSS</title>
+</head>
+<body>
+
+    <div class="fundo">
+        <video autoplay loop muted class="video-background">
+            <source src="../videos/120172-720504774.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header class="principal-header">
+        <div class="header-container">
+            <h1 class="htmltitu">CSS (Cascading Style Sheets)</h1>
+            
+             <div class="titu">
+                <a class="titulos" href="html-glossario.html"><h1>HTML</h1></a>
+                <h1>|</h1>
+                <a class="titulos" href="js-glossario.html"><h1>JS</h1></a>
+                <h1>|</h1>
+                <a class="titulos" href="../index.html"><h1>Glossário</h1></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="espacinho"></div>
+
+    <div class="containergeral">
+
+        <!-- =========================================== começo ========================================================= -->
+        <div class="sanfonah1-container">
+            <div class="sanfonah1-item">
+                <button class="sanfonah1-header">Display</button>
+
+                <div class="sanfonah1-content">
+                    <div class="sanfonah1-container">
+                        <div class="sanfonah1-item">
+                            <button class="sanfonah1-header">Visão geral</button>
+                            <div class="sanfonah1-content">
+                                <p>O Display é um comando dos mais básicos, mas muito preciso, digo de precisão. Ele tem várias alternativas, a mais comum que falaremos aqui é flex.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfonah1-item">
+                            <button class="sanfonah1-header">Analizando oque o flex faz</button>
+                            <div class="sanfonah1-content">
+                                <p>O flex faz com que um, ou mais elementos de uma conteiner, div, main... (seja oque for do tipo), fique alinhdos.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfonah1-item">
+                            <button class="sanfonah1-header">Elementos sem flex</button>
+                            <div class="sanfonah1-content">
+                                <p>Quando não colocamos o display flex, os elementos ficam empilhados da maneira que foram escritos.</p>
+                                <img src="../imagens/ex_df_site.jpg" alt="demonstração em site">
+                            </div>
+                        </div>
+
+                        <div class="sanfonah1-item">
+                            <button class="sanfonah1-header">Texto com flex</button>
+                            <div class="sanfonah1-content">
+                                <p>Com o flex, os elementos se alinham em uma linha.</p>
+                                <img src="../imagens/ex_dss_site.jpg" alt="demonstração em site">
+                            </div>
+                        </div>
+
+                        <div class="sanfonah1-item">
+                            <button class="sanfonah1-header">Achei feio com flex assim</button>
+                            <div class="sanfonah1-content">
+                                <p>Achou feio assim? É, eu também, mas calma, analize outros comandos como justify-content, margin ou gap. Veja como o código fica, aposto que vai gostar.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfonah1-item">
+                            <button class="sanfonah1-header">Imagem exemplo (site)</button>
+                            <div class="sanfonah1-content">
+                                <img class="ex-tagh" src="../imagens/ex_dss_cod.jpg" alt="código do flex">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================================== fim ========================================================= -->
+
+        <div class="sanfona_a-container">
+            <div class="sanfona_a-item">
+                <button class="sanfona_a-header">justify-content</button>
+
+                <div class="sanfona_a-content">
+                    <div class="sanfona_a-item">
+                        <button class="sanfona_a-header">oque ela faz ?</button>
+                        <div class="sanfona_a-content">
+                            <p>O justify-content é o código que faz com que o(s) elemnto(s) de uma div após estarem num formanto de linha [ver códido display flex], fiquem em diferentes posições.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_a-item">
+                        <button class="sanfona_a-header">como usar</button>
+                        <div class="sanfona_a-content">
+                            <div class="sanfona_a-item">
+                                <button class="sanfona_a-header">Variações principais</button>
+                                <div class="sanfona_a-content">
+                                    <ul>
+                                        <strong>O justify-content contém vários subs do comando para cada ocasião que precisar. Ele pode conter:</strong> <br>
+                                        <li>flex-start (forma padrão)</li>
+                                        <li>center</li>
+                                        <li>flex-end</li>
+                                        <li>space-around</li>
+                                        <li>space-evenly</li>
+                                        <li>space-between</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="sanfona_a-item">
+                                <button class="sanfona_a-header">oque cada uma faz ?</button>
+                                <div class="sanfona_a-content">
+                                    <p>flex-start → Alinha todos os itens no início do contêiner (lado esquerdo em layouts horizontais).</p>
+                                    <p>center → Centraliza todos os itens no meio do contêiner.</p>
+                                    <p>flex-end → Alinha todos os itens no final do contêiner (lado direito em layouts horizontais).</p>
+                                    <p>space-around → Distribui os itens com espaços iguais ao redor de cada um, ou seja, metade do espaço nas bordas externas e espaço inteiro entre itens.</p>
+                                    <p>space-evenly → Distribui os itens com espaços iguais tanto nas bordas externas quanto entre cada item.</p>
+                                    <p>space-between → Coloca o primeiro item colado no início e o último colado no final, distribuindo o espaço restante igualmente entre os itens do meio.</p>
+                                </div>
+                            </div>
+
+                            <div class="sanfona_a-item">
+                                <button class="sanfona_a-header">imagem do codigo em andamento</button>
+                                <div class="sanfona_a-content">
+                                    <img src="../imagens/ex_cod_jcs.jpg" alt="imagem do codigo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_a-item">
+                        <button class="sanfona_a-header">imagem de como fica no site</button>
+                        <div class="sanfona_a-content">
+                            <img class="img_jcs" src="../imagens/ex_jcs_site.jpg" alt="imagem do site com o codigo funcionando">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--================================================================ Termino da primeira fileira de exemplo ===========================================================================-->
+
+    <div class="containergeral">
+        <div class="sanfona_botao-container">
+            <div class="sanfona_botao-item">
+                <button class="sanfona_botao-header">box-shadow (sombra nos containers)</button>
+
+                <div class="sanfona_botao-content">
+                    <div class="sanfona_botao-container">
+                        <div class="sanfona_botao-item">
+                            <button class="sanfona_botao-header">Visão geral</button>
+                            <div class="sanfona_botao-content">
+                                <p>A propriedade box-shadow no CSS permite criar sombras ao redor de elementos, dando profundidade e destaque no layout. É muito usada para criar efeitos visuais que simulam iluminação, flutuação ou relevo.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_botao-item">
+                            <button class="sanfona_botao-header">como usar</button>
+                            <div class="sanfona_botao-content">
+                                <div class="sanfona_botao-item">
+                                    <button class="sanfona_botao-header">Sintaxe Geral</button>
+                                    <div class="sanfona_botao-content">
+                                        <p>box-shadow: deslocamentoX deslocamentoY raio-desfoque cor;</p>
+                                    </div>
+                                </div>
+
+                                <div class="sanfona_botao-item">
+                                    <button class="sanfona_botao-header">como programar</button>
+                                    <div class="sanfona_botao-content">
+                                        <p>deslocamentoX → posição da sombra no eixo horizontal (valores positivos empurram para a direita, negativos para a esquerda). <br><br>
+                                        deslocamentoY → posição no eixo vertical (positivos para baixo, negativos para cima).<br><br>
+                                        raio-desfoque → define o quanto a sombra será borrada (quanto maior, mais suave).<br><br>
+                                        cor → define a cor e a opacidade da sombra (normalmente se usa rgba() para transparência).<br><br>
+                                        <strong>Opcionalmente, você pode adicionar:</strong><br>
+                                        spread (antes da cor) → aumenta ou diminui o tamanho da sombra.<br><br>
+                                        inset → transforma a sombra em interna, dentro do elemento.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_botao-item">
+                            <button class="sanfona_botao-header">imagem do site</button>
+                            <div class="sanfona_botao-content">
+                                <img src="../imagens/ex_bs_site.jpg" alt="exemplo no site">
+                            </div>
+                        </div>
+
+                        <div class="sanfona_botao-item">
+                            <button class="sanfona_botao-header">Imagem do código</button>
+                            <div class="sanfona_botao-content">
+                                <img class="ex-tagh" src="../imagens/ex_bs_cod.jpg" alt="exemplo de codigo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sanfona_img-container">
+            <div class="sanfona_img-item">
+                <button class="sanfona_img-header">background: linear-gradient (Gradiente linear)</button>
+
+                <div class="sanfona_img-content">
+                    <div class="sanfona_img-item">
+                        <button class="sanfona_img-header">Uso geral</button>
+                        <div class="sanfona_img-content">
+                            <p>Um gradiente linear é uma transição suave de cores em linha reta, que pode ser horizontal, vertical, diagonal ou em qualquer ângulo que você escolher.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_img-item">
+                        <button class="sanfona_img-header">detalhando a função</button>
+                        <div class="sanfona_img-content">
+                            <p><strong>Parametros</strong> <br><br>
+                            direção → pode ser: <br>
+                            to right (esquerda → direita) <br>
+                            to bottom (cima → baixo) <br>
+                            45deg (ângulo em graus) <br><br>
+                            cor1, cor2, ... → as cores que formarão o gradiente (pode ter mais de duas).</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_img-item">
+                        <button class="sanfona_img-header">imagem de como fica no código</button>
+                        <div class="sanfona_img-content">
+                            <img src="../imagens/ex_bl_cod.jpg" alt="imagem do site com o codigo funcionando">
+                        </div>
+                    </div>
+
+                    <div class="sanfona_img-item">
+                        <button class="sanfona_img-header">imagem de como fica no site</button>
+                        <div class="sanfona_img-content">
+                            <img src="../imagens/ex_bl_site.jpg" alt="imagem do site com o codigo funcionando">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--================================================================ Termino da segunda fileira de exemplo ===========================================================================-->
+
+    <div class="containergeral">
+        <div class="sanfona_pon-container">
+            <div class="sanfona_pon-item">
+                <button class="sanfona_pon-header">Personalizar o cursor</button>
+
+                <div class="sanfona_pon-content">
+                    <div class="sanfona_pon-container">
+                        <div class="sanfona_pon-item">
+                            <button class="sanfona_pon-header">Visão geral</button>
+                            <div class="sanfona_pon-content">
+                                <p>A propriedade cursor define qual tipo de ponteiro do mouse será exibido quando o usuário passar sobre um elemento. Normalmente, usamos valores como pointer (mãozinha) ou default (seta), mas também é possível usar uma imagem personalizada como ponteiro.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_pon-item">
+                            <button class="sanfona_pon-header">como usar (sintaxe com imagem)</button>
+                            <div class="sanfona_pon-content">
+                                <p><strong>Como escreve o códico :</strong> cursor: url('imagem.png'), tipo-fallback;</p>
+                                <p>url('imagem.png') → caminho para a imagem do cursor. <br><br>
+                                tipo-fallback → tipo de cursor padrão caso a imagem não carregue (ex: auto, pointer).</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_pon-item">
+                            <button class="sanfona_pon-header">exemplo vivo (arraste o mouse na area abaixo)</button>
+                            <div class="sanfona_pon-content">
+                                <div class="ponteiro"></div>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_pon-item">
+                            <button class="sanfona_pon-header">Imagem do código</button>
+                            <div class="sanfona_pon-content">
+                                <img class="ex-tagh" src="../imagens/ex-oul-cod.png" alt="exemplo de codigo de listas">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sanfona_main-container">
+            <div class="sanfona_main-item">
+                <button class="sanfona_main-header">Texto com sombra neon</button>
+
+                <div class="sanfona_main-content">
+                    <div class="sanfona_main-item">
+                        <button class="sanfona_main-header">Utilidade</button>
+                        <div class="sanfona_main-content">
+                            <p>A propriedade text-shadow adiciona uma ou mais sombras ao texto. Quando usamos cores vivas e várias camadas de sombra, conseguimos criar um efeito de neon — aquele brilho típico de letreiros luminosos.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_main-item">
+                        <button class="sanfona_main-header">como se usa</button>
+                        <div class="sanfona_main-content">
+                            <p>Sintaxe Básica: <br>text-shadow: deslocamentoX deslocamentoY raio-desfoque cor;</p>
+                            <p>deslocamentoX → posição horizontal da sombra (positivo = direita, negativo = esquerda). <br><br>
+                            deslocamentoY → posição vertical da sombra (positivo = baixo, negativo = cima). <br><br>
+                            raio-desfoque → define o quão espalhada será a sombra (quanto maior, mais suave).<br><br>
+                            cor → cor da sombra.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_main-item">
+                        <button class="sanfona_main-header">imagem de como fica no código</button>
+                        <div class="sanfona_main-content">
+                            <img class="ex_img_gar" src="../imagens/ex_txc_cod.jpg" alt="imagem do codigo">
+                        </div>
+                    </div>
+
+                    <div class="sanfona_main-item">
+                        <button class="sanfona_main-header">imagem de como fica no site</button>
+                        <div class="sanfona_main-content">
+                            <img src="../imagens/ex_txc_site.jpg" alt="imagem do site">
+                            <p>Importante avisar que o fundo preto foi um comando adicional para que fosse melhor de perceber.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--================================================================ Termino da terceira fileira de exemplo ===========================================================================-->
+
+    <div class="containergeral">
+        <div class="sanfona_botao-container">
+            <div class="sanfona_botao-item">
+                <button class="sanfona_botao-header">Rotacionar algo (animação)</button>
+
+                <div class="sanfona_botao-content">
+                    <div class="sanfona_footer-container">
+                        <div class="sanfona_footer-item">
+                            <button class="sanfona_footer-header">Visão geral</button>
+                            <div class="sanfona_footer-content">
+                                <p>Esse código é mais difícil comparados aos outros, mas vamos lá. O movimento de rotação pode servir para chamar atenção, ter engajamento nos objetos ou por opção de aparencia.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_footer-item">
+                            <button class="sanfona_footer-header">como usar</button>
+                            <div class="sanfona_footer-content">
+                                <p>@keyframes girar {<br>
+                                to { transform: rotate(360deg); } <br>
+                                } <br><br>
+                                div {<br>
+                                width: 100px;<br>
+                                height: 100px;<br>
+                                background: red; <br>
+                                animation: girar 2s linear infinite;<br>
+                                }</p>
+
+                                <p>@keyframes girar → define a animação chamada girar, que vai de um estado inicial (0°) até um estado final (rotate(360deg)). <br>
+                                transform: rotate(360deg) → gira o elemento em 360 graus. <br><br>
+                                <strong>animation → aplica a animação ao elemento:</strong> <br>
+                                2s → duração de 2 segundos por volta.<br>
+                                linear → mantém a mesma velocidade durante todo o giro. <br>
+                                infinite → repete para sempre.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_footer-item">
+                            <button class="sanfona_footer-header">exemplo vivo</button>
+                            <div class="sanfona_footer-content">
+                                <button class="rotacao">Parabéns se conseguiu ler</button>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_footer-item">
+                            <button class="sanfona_footer-header">Imagem do código</button>
+                            <div class="sanfona_footer-content">
+                                <img class="ex-tagh" src="../imagens/ex_rot_cod.jpg" alt="exemplo de codigo de rotação">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sanfona_input-container">
+            <div class="sanfona_input-item">
+                <button class="sanfona_input-header">active (clique)</button>
+
+                <div class="sanfona_input-content">
+                    <div class="sanfona_input-item">
+                        <button class="sanfona_input-header">Utilidade</button>
+                        <div class="sanfona_input-content">
+                            <p>Usar active é algo que em sites avançaos concerteza terá, até esse site tem. Quanto você clicou pra abrir esse card, foi um comando com active.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_input-item">
+                        <button class="sanfona_input-header">usando o básico</button>
+                        <div class="sanfona_input-content">
+                            <p>Você pode fazer muitas, mas muitas coisas com esse comando, nessa caso vamos só mudar a cor de fundo com o clique.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_input-item">
+                        <button class="sanfona_input-header">Explorando a sintaxe</button>
+                        <div class="sanfona_input-content">
+                            <p>.seu_elemento:active { <br>
+                            background-color: yellow; <br>
+                            }</p>
+                            <p>Estamos dizendo que quando clicarmos, ou segurarmos (active), a cor de fundo (background-color) vai mudar para amarelo (yellow).</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_input-item">
+                        <button class="sanfona_input-header">Exemplo vivo</button>
+                        <div class="sanfona_input-content">
+                            <div class="act_ba"><p>clique nessa área</p></div>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_input-item">
+                        <button class="sanfona_input-header">imagem de como fica no código</button>
+                        <div class="sanfona_input-content">
+                            <img src="../imagens/ex_act_cod.jpg" alt="imagem do codigo funcionando">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--================================================================ Termino da quarta fileira de exemplo ===========================================================================-->
+
+    <div class="containergeral">
+        <div class="sanfona_audio-container">
+            <div class="sanfona_audio-item">
+                <button class="sanfona_audio-header">Transição suave (ver hover antes)</button>
+
+                <div class="sanfona_audio-content">
+                    <div class="sanfona_audio-container">
+                        <div class="sanfona_audio-item">
+                            <button class="sanfona_audio-header">Uso geral</button>
+                            <div class="sanfona_audio-content">
+                                <p>Você pode usar transition em quase qualquer propriedade que muda, como cor, tamanho, posição, opacidade, sombra, etc.</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_audio-item">
+                            <button class="sanfona_audio-header">como usar (com sintaxe)</button>
+                            <div class="sanfona_audio-content">
+                                <p><strong>Sintaxe :</strong> transition: all 0.3s ease;</p>
+                                <p>all → indica que todas as propriedades que mudarem serão animadas. <br>
+                                0.3s → duração da animação (0,3 segundos). <br>
+                                ease → tipo de aceleração da animação (começa devagar, acelera e termina devagar).</p>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_audio-item">
+                            <button class="sanfona_audio-header">Ver exemplo vivo (mudando cor de fundo)</button>
+                            <div class="sanfona_audio-content">
+                                <div class="transi"><p>passe o mouse nessa área</p></div>
+                            </div>
+                        </div>
+
+                        <div class="sanfona_audio-item">
+                            <button class="sanfona_audio-header">Imagem do código</button>
+                            <div class="sanfona_audio-content">
+                                <img class="ex-tagh" src="../imagens/ex_transi_cod.jpg" alt="exemplo de codigo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sanfona_video-container">
+            <div class="sanfona_video-item">
+                <button class="sanfona_video-header">hover (passar o mouse em cima)</button>
+
+                <div class="sanfona_video-content">
+                    <div class="sanfona_video-item">
+                        <button class="sanfona_video-header">Utilidade</button>
+                        <div class="sanfona_video-content">
+                            <p>Usamos para aplicar estilos quando o mouse passa sobre um elemento. É muito útil para criar feedback visual ao usuário, deixando a interface mais interativa e intuitiva.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_video-item">
+                        <button class="sanfona_video-header">usando o básico</button>
+                        <div class="sanfona_video-content">
+                            <p>O exemplo que mostrarei é que quando passar o mouse em cima o objeto rotacione (bom dar uma olhada no card de rotação e transition antes).</p>
+                            <p><strong>Sintaxe :</strong> <br>
+                            .nome_do_elemento:hover {<br>
+                            transform: rotate(45deg); <br>
+                            }</p>
+                            <p>.nome_do_elemento tem transition: transform 0.5s ease; → isso faz a rotação acontecer suavemente em 0,5s. <br>
+                            .caixa:hover aplica transform: rotate(45deg); → rotaciona o elemento 45 graus quando o mouse passa por cima. <br>
+                            Quando o mouse sai, o elemento volta à posição original, graças ao transition.</p>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_video-item">
+                        <button class="sanfona_video-header">Exemplo vivo (vídeo com audio)</button>
+                        <div class="sanfona_video-content">
+                            <div class="hor">
+                                <button class="horr">passe o mouse aqui</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sanfona_video-item">
+                        <button class="sanfona_video-header">imagem de como fica no código</button>
+                        <div class="sanfona_video-content">
+                            <img src="../imagens/ex_horr_cod.jpg" alt="imagem do codigo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div></div>
+    </footer>
+
+    <!-- Liga o JavaScript externo -->
+    <script src="../js/css-script.js"></script>
+<footer class="rodape">
+        <p>© 2026 Neidiman Raposo. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

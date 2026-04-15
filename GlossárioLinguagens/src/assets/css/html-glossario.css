@@ -1,0 +1,268 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(6, 0, 53);
+}
+
+.fundo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: blur(5px);
+}
+.espacinho{
+    margin-top: 5%;
+}
+.teum{
+    margin-left: 2.5%;
+}
+.containergeral{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    margin-top: 3%;
+}
+.sanfonah1-container, 
+.sanfona_a-container, 
+.sanfona_botao-container, 
+.sanfona_img-container, 
+.sanfona_main-container, 
+.sanfona_input-container, 
+.sanfona_footer-container, 
+.sanfona_video-container, 
+.sanfona_audio-container, 
+.sanfona_oul-container {
+    max-width: 600px;
+    margin: 30px auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sanfonah1-container:hover,
+.sanfona_a-container:hover,
+.sanfona_botao-container:hover,
+.sanfona_img-container:hover,
+.sanfona_main-container:hover,
+.sanfona_input-container:hover,
+.sanfona_footer-container:hover,
+.sanfona_video-container:hover,
+.sanfona_audio-container:hover,
+.sanfona_oul-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.6);
+}
+.sanfonah1-header, 
+.sanfona_a-header, 
+.sanfona_botao-header, 
+.sanfona_img-header, 
+.sanfona_main-header, 
+.sanfona_input-header, 
+.sanfona_footer-header, 
+.sanfona_video-header, 
+.sanfona_oul-header, 
+.sanfona_audio-header {
+    background: linear-gradient(135deg, #1f1f3a, #1d1dc7);
+    color: #f1f1f1;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #444;
+    outline: none;
+    transition: background 0.4s ease, padding-left 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.sanfonah1-header:hover, 
+.sanfona_a-header:hover, 
+.sanfona_botao-header:hover, 
+.sanfona_img-header:hover, 
+.sanfona_main-header:hover, 
+.sanfona_footer-header:hover, 
+.sanfona_video-header:hover, 
+.sanfona_audio-header:hover, 
+.sanfona_oul-header:hover {
+    background: linear-gradient(135deg, #3a3a5f, #0b0b96);
+    padding-left: 25px;
+}
+.sanfonah1-content, 
+.sanfona_a-content, 
+.sanfona_botao-content, 
+.sanfona_img-content, 
+.sanfona_main-content, 
+.sanfona_input-content, 
+.sanfona_footer-content, 
+.sanfona_video-content, 
+.sanfona_audio-content, 
+.sanfona_oul-content {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0 18px;
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out, background 0.4s ease;
+}
+.sanfonah1-content.active, 
+.sanfona_a-content.active, 
+.sanfona_img-content.active, 
+.sanfona_main-content.active, 
+.sanfona_input-content.active, 
+.sanfona_footer-content.active, 
+.sanfona_video-content.active, 
+.sanfona_audio-content.active, 
+.sanfona_oul-content.active, 
+.sanfona_botao-content.active {
+    max-height: 1000px; 
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+
+/*=========================================================================================Sanfonas=============================================================================*/
+
+
+
+
+.sanfonah1-container, 
+.ex-tagh, .ex_img_gar, .img_roda_site {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ex-tagh:hover, .ex_img_gar:hover, .img_roda_site:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+.ex-tagh{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.ex_img_gar{
+    width: 550px;
+    height: auto;
+    overflow: hidden;
+}
+.img_roda_site{
+    width: 550px;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    padding: 0px 30px;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 2px solid #B8860B;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: filter 0.5s ease;
+}
+
+.principal-header{
+    background-color: rgba(21, 41, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-bottom: 3px solid rgb(243, 199, 104);
+    height: 10%;
+    padding-bottom:20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.htmltitu {
+    margin: 0;
+    font-size: 22px;
+    color: #f5e6c8;
+}
+.titu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: auto;
+    white-space: nowrap;
+}
+header:hover {
+    background: rgba(0,0,0,0.4);
+}
+.htmltitu:hover {
+    color: gold;
+}
+.titulos h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #f5e6c8;
+}
+.titu h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #f5e6c8;
+}
+.titu:hover {
+    transform: scale(1.05);
+}
+.titulos:hover {
+    color: #FFD700;
+    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.6);
+    color: #FFD700;
+    transform: translateY(-2px);
+}
+
+.rodape {
+    background: transparent;
+    color: #f5e6c8;
+    text-align: center;
+}
+
+.rodape p {
+    margin: 0;
+    text-align: center;
+    color: #f5e6c8;
+}
