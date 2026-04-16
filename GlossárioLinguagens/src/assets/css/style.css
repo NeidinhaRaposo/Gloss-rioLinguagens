@@ -57,7 +57,7 @@ a {
     border-radius: 20px;
 
     /* COR VISÍVEL (lilás + azul) */
-    background: linear-gradient(135deg, #e6dcf5, #cfe3ff);
+    background-color: rgba(255, 255, 255, 0.832);
 
     width: 300px;
     min-height: 430px;
@@ -77,16 +77,16 @@ a {
 /* ===== HOVER ===== */
 .html:hover, .css:hover, .js:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    border: solid 1px #C326EB;
 }
 
 
 /* ===== TÍTULOS ===== */
 .t-e {
-    color: rgb(78, 78, 129);
+    color: #C326EB;
     margin-bottom: 15px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2.0em;
 }
 
 
@@ -105,13 +105,14 @@ button {
     width: 150px;
 
     /* CENTRALIZA */
-    margin: auto auto 0 auto;
+    margin: 0 auto;
+
 
     padding: 12px 18px;
     border: none;
     border-radius: 10px;
 
-    background: linear-gradient(135deg, #6a6ab0, #8a8ad8);
+    background: linear-gradient(150deg, #C326EB, #EB26BD);
 
     color: white;
     font-size: 1em;
@@ -126,11 +127,19 @@ button {
     transition: all 0.3s ease;
 }
 
-button:hover {
-    transform: scale(1.08);
-    background: linear-gradient(135deg, #7a7ad0, #a0a0ff);
+a{
+    text-decoration: none;
+    
 }
 
+button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg,  #EB2646 );
+}
+
+.button_JS, .button_css{
+    margin-top: 54px;
+}
 
 /* ===== RESPONSIVO ===== */
 @media screen and (max-width: 900px) {
@@ -146,31 +155,31 @@ button:hover {
 }
 
 
-/* ===== FUNDO ===== */
-.fundo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    object-fit: cover;
-
-    filter: blur(6px) brightness(0.65);
-    transition: filter 0.5s ease;
-}
-
-.fundo:hover {
-    filter: blur(4px) brightness(0.85);
-}
-
 .rodape {
     width: 100%;              /* ocupa toda largura */
     text-align: center;       /* centraliza o texto */
     color: black;
     padding: 15px 0;          /* cima/baixo */
     font-size: 14px;
-    margin-top: 40px;
     display: flex;
     justify-content: center;
+}
+
+.digitando {
+  font-family: monospace;
+  overflow: hidden;            
+  border-right: 2px solid black; 
+  white-space: nowrap;
+  width: 0;
+  animation: digitando 4s steps(30, end) forwards, cursor 0.7s infinite;
+}
+
+
+@keyframes digitando {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes cursor {
+  50% { border-color: transparent; }
 }
