@@ -1,6 +1,6 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(6, 0, 53);
+    background: linear-gradient(500deg, #2411ED, #ED11D0);
 }
 
 .fundo{
@@ -23,7 +23,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: flex-start; 
-    margin-top: 3%;
+
 }
 .sanfonah1-container, 
 .sanfona_a-container, 
@@ -35,8 +35,8 @@ body{
 .sanfona_video-container, 
 .sanfona_audio-container, 
 .sanfona_oul-container {
-    max-width: 600px;
-    margin: 30px auto;
+    max-width: 700px;
+    margin: 40px auto;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
@@ -68,18 +68,19 @@ body{
 .sanfona_video-header, 
 .sanfona_oul-header, 
 .sanfona_audio-header {
-    background: linear-gradient(135deg, #1f1f3a, #1d1dc7);
+    background: linear-gradient(500deg, #2411ED);
     color: #f1f1f1;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     border: none;
     border-bottom: 1px solid #444;
     outline: none;
     transition: background 0.4s ease, padding-left 0.3s ease;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
+
 }
 .sanfonah1-header:hover, 
 .sanfona_a-header:hover, 
@@ -160,99 +161,61 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 header{
-    padding: 0px 30px;
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border-bottom: 2px solid #B8860B;
+    background: transparent;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     transition: filter 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .principal-header{
-    background-color: rgba(21, 41, 255, 0.3);
     backdrop-filter: blur(8px);
-    border-bottom: 3px solid rgb(243, 199, 104);
-    height: 10%;
-    padding-bottom:20px;
+    height: 13vh;
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    display: block;
     gap: 20px;
 }
+
 .htmltitu {
     margin: 0;
-    font-size: 22px;
+    font-size: 30px;
     color: #f5e6c8;
 }
+
 .titu {
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    margin: 0 auto;
     align-items: center;
-    margin-left: auto;
-    white-space: nowrap;
+    gap: 10px;
+    margin-top: 12px;
+    
 }
-header:hover {
-    background: rgba(0,0,0,0.4);
-}
-.htmltitu:hover {
-    color: gold;
-}
+
+
 .titulos h1 {
-    margin: 0;
     font-size: 18px;
     color: #f5e6c8;
 }
+
+.titulos:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
 .titu h1 {
     margin: 0;
     font-size: 18px;
     color: #f5e6c8;
-}
-.titu:hover {
-    transform: scale(1.05);
-}
-.titulos:hover {
-    color: #FFD700;
-    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.6);
-    color: #FFD700;
-    transform: translateY(-2px);
 }
 
 .rodape {
